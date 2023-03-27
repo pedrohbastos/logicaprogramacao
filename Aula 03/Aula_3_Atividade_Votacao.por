@@ -1,6 +1,6 @@
 programa
 {
-	
+	inclua biblioteca Matematica -->m
 	funcao inicio()
 	{
 		inteiro encerrar = 0, candidato1 = 0, candidato2 = 0, branco = 0, nulo = 0, votos = 0, votosTotais, percentualTotal
@@ -45,11 +45,10 @@ programa
 			}enquanto(votos != 0)
 				escreva("Votação encerrada!","\n")
 				escreva("Total de Votos: ",votosTotais,"\n")
-				escreva("Percentual da votação: ", "\n")
-				escreva("Percentual do candidato numero 1: ",percentualC1, "\n")
-				escreva("Percentual do candidato numero 2: ",percentualC2, "\n")
-				escreva("Percentual da votação em Branco: ",percentualBranco, "\n")
-				escreva("Percentual da votação Nulo: ",percentualNulo, "\n")
+				escreva("Percentual do Enéas: ",m.arredondar(percentualC1, 2), "\n")
+				escreva("Percentual do Francisco: ",m.arredondar(percentualC2, 2),"%", "\n")
+				escreva("Percentual de Brancos: ",m.arredondar(percentualBranco, 2),"%", "\n")
+				escreva("Percentual de Nulos: ",m.arredondar(percentualNulo, 2),"%", "\n")
 			
 	}
 }
@@ -58,7 +57,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1654; 
+ * @POSICAO-CURSOR = 1366; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
